@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Seja bem-vindo a Gaucha Imobiliaria" />
+    <meta name="keywords" content="gaucha, imobiliaria" />
+    <title>Gaucha Imobiliaria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script defer src="js/scripts.js"></script>
+</head>
+
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-head">
+            <div class="first_nav">
+                <div class="container">
+                    <nav class="navbar">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="#">
+                                <img src="media/logo.png" alt="Gaucha Imobiliaria" width="112" height="28" />
+                            </a>
+                            <a class="navbar-item is-hidden-desktop" href="tel:+5599999999">
+                                <span class="icon" style="color: #333;">
+                    <i class="fa fa-lg fa-phone-alt"></i>
+                  </span>
+                            </a>
+                            <a class="navbar-item is-hidden-desktop" href="mailto:gaucha@imobiliaria.com">
+                                <span class="icon" style="color: #333;">
+                    <i class="fa fa-lg fa-envelope"></i>
+                  </span>
+                            </a>
+                            <a class="navbar-item is-hidden-desktop" href="#" target="_blank">
+                                <span class="icon">
+                    <i class="fab fa-lg fa-facebook-f"></i>
+                  </span>
+                            </a>
+
+                            <div class="navbar-burger burger" data-target="navMenuBlogHero">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div id="navMenuBlogHero" class="navbar-menu">
+
+                            <div class="navbar-start">
+                                <a class="navbar-item " href="index.html"><b>Home</b></a>
+                                <a class="navbar-item" href="imovelVenda.html"><b>Comprar</b></a>
+                                <a class="navbar-item is-active" href="imovelAluguel.html"><b>Alugar</b></a>
+                                <a class="navbar-item" href="sobre.html"><b>Sobre</b></a>
+                                <a class="navbar-item" href="contato.html"><b>Contato</b></a>
+                            </div>
+
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <div class="field is-grouped">
+                                        <p class="control">
+                                            <a class="button is-normal is-facebook">
+                                                <span class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                          </span>
+                                                <span>Facebook</span>
+                                            </a>
+                                        </p>
+                                        <p class="control">
+                                            <a class="button is-normal is-success" href="tel:+5599999999">
+                                                <span class="icon">
+                            <i class="fa fa-phone-alt"></i>
+                          </span>
+                                                <span>Ligue agora!</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container has-text-right">
+            <h4 class="title is-4">Imóveis para locação</h4>
+        </div>
+
+        <div class="container ml-6 mr-6 mt-3">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent is-4">
+                    <article class="tile is-child box">
+                        <article class="panel is-link">
+                            <p class="panel-heading">
+                                Filtros
+                            </p>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>O que você precisa?</b></p>
+                                    <div class="field has-addons">
+                                        <div class="control is-expanded">
+                                            <div class="select is-fullwidth">
+                                                <select name="contrato">
+                                              <option value="Venda">Venda</option>
+                                              <option value="Locacao">Locação</option>                                            
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Onde?</b></p>
+                                    <div class="field has-addons">
+                                        <div class="control is-expanded">
+                                            <div class="select is-fullwidth">
+                                                <select name="cidade">
+                                              <option value="Santa Maria">Santa Maria</option>
+                                              <option value="Porto Alegre">Porto Alegre</option>                                            
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Em que bairro?</b></p>
+                                    <div class="field has-addons">
+                                        <div class="control is-expanded">
+                                            <div class="select is-fullwidth">
+                                                <select name="bairro">
+                                              <option value="bairro 1">Bairro 1</option>
+                                              <option value="bairro 2">Bairro 2</option> 
+                                              <option value="bairro 3">Bairro 3</option>                                           
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Tipos</b></p>
+                                    <div class="field has-addons">
+                                        <div class="control is-expanded">
+                                            <div class="select is-fullwidth">
+                                                <select name="tipos">
+                                              <option value="apartamento">Apartamento</option>
+                                              <option value="casa">Casa</option>  
+                                              <option value="chacara">Chácara</option> 
+                                              <option value="cobertura">Cobertura</option> 
+                                              <option value="kitnet">Kitnet</option> 
+                                              <option value="pavilhao">Pavilhão</option> 
+                                              <option value="predio_residencial">Prédio Residencial</option> 
+                                              <option value="sitio">Sítio</option>                                           
+                                              <option value="terreno">Terreno</option> 
+                                              <option value="triplex">Triplex</option> 
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Quartos</b></p>
+                                    <div class="buttons">
+                                        <button class="button is-link is-outlined">1</button>
+                                        <button class="button is-link is-outlined">2</button>
+                                        <button class="button is-link is-outlined">3</button>
+                                        <button class="button is-link is-outlined">4</button>
+                                        <button class="button is-link is-outlined">5+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Suítes</b></p>
+                                    <div class="buttons">
+                                        <button class="button is-link is-outlined">1</button>
+                                        <button class="button is-link is-outlined">2</button>
+                                        <button class="button is-link is-outlined">3</button>
+                                        <button class="button is-link is-outlined">4</button>
+                                        <button class="button is-link is-outlined">5+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Banheiros</b></p>
+                                    <div class="buttons">
+                                        <button class="button is-link is-outlined">1</button>
+                                        <button class="button is-link is-outlined">2</button>
+                                        <button class="button is-link is-outlined">3</button>
+                                        <button class="button is-link is-outlined">4</button>
+                                        <button class="button is-link is-outlined">5+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Vagas</b></p>
+                                    <div class="buttons">
+                                        <button class="button is-link is-outlined">1</button>
+                                        <button class="button is-link is-outlined">2</button>
+                                        <button class="button is-link is-outlined">3</button>
+                                        <button class="button is-link is-outlined">4</button>
+                                        <button class="button is-link is-outlined">5+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Status</b></p>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Novo
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Usado
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Na planta
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Em construção
+                                      </label>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Características</b></p>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Em condomínio
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Financiável
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Aceita Permuta
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Mobiliado/Semi
+                                      </label>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <p><b>Comodidades</b></p>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Churrasqueira
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Dep.Empregada
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Elevador
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Lareira
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Piscina
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Portaria 24h
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Portão Eletrônico
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Sacada
+                                      </label><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Salão de festas
+                                      </label>
+                                </div>
+                            </div>
+                            <div class="panel-block is-expanded">
+                                <div class="control">
+                                    <div class="buttons">
+                                        <button class="button is-info is-fullwidth"><b>Filtrar</b></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+                </div>
+                <div class="tile is-parent is-9 mr-0 ml-0 pr-0 px-0">
+                    <article class="tile is-child box is-4 mr-2">
+                        <div class="card is-3">
+                            <div class="card-image">
+                                <figure class="image is-16by9 is-covered">
+                                    <img src="https://images.unsplash.com/photo-1550921082-c282cdc432d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="item__title">
+                                    <p>Casa</p><br>
+                                    <p>Pequena descrição do imóvel</p><br>
+                                    <span class="icon has-text-dark"> 3&nbsp;
+                                    <i class="fas fa-bed fa-lg"></i>
+                                    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="icon has-text-dark">
+                                        2&nbsp;<i class="fas fa-toilet fa-lg"></i>
+                                    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="icon has-text-dark">
+                                        1&nbsp;<i class="fas fa-car fa-lg"></i>
+                                    </span>
+                                    <hr/>
+                                    <p><b>R$ 1.200,00 / mês</b></p><br>
+                                </div>
+                                <div class="item__description">
+                                    <a class="button is-primary" href="#">Ver mais </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="tile is-child box is-4">
+                        <div class="card is-3">
+                            <div class="card-image">
+                                <figure class="image is-16by9 is-covered">
+                                    <img src="https://images.unsplash.com/photo-1550921082-c282cdc432d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="item__title">
+                                    <p>Casa</p><br>
+                                    <p>Pequena descrição do imóvel</p><br>
+                                    <span class="icon has-text-dark"> 3&nbsp;
+                                    <i class="fas fa-bed fa-lg"></i>
+                                    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="icon has-text-dark">
+                                        2&nbsp;<i class="fas fa-toilet fa-lg"></i>
+                                    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="icon has-text-dark">
+                                        1&nbsp;<i class="fas fa-car fa-lg"></i>
+                                    </span>
+                                    <hr/>
+                                    <p><b>R$ 1.200,00 / mês</b></p><br>
+                                </div>
+                                <div class="item__description">
+                                    <a class="button is-primary" href="#">Ver mais </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="tile is-child box is-4">
+                        <div class="card is-3">
+                            <div class="card-image">
+                                <figure class="image is-16by9 is-covered">
+                                    <img src="https://images.unsplash.com/photo-1550921082-c282cdc432d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="item__title">
+                                    <p>Casa</p><br>
+                                    <p>Pequena descrição do imóvel</p><br>
+                                    <span class="icon has-text-dark"> 3&nbsp;
+                                    <i class="fas fa-bed fa-lg"></i>
+                                    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="icon has-text-dark">
+                                        2&nbsp;<i class="fas fa-toilet fa-lg"></i>
+                                    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="icon has-text-dark">
+                                        1&nbsp;<i class="fas fa-car fa-lg"></i>
+                                    </span>
+                                    <hr/>
+                                    <p><b>R$ 1.200,00 / mês</b></p><br>
+                                </div>
+                                <div class="item__description">
+                                    <a class="button is-primary" href="#">Ver mais </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article><br>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-4">
+                            <div class="content">
+                                <h6 class="footer_title title is-6">NEWSLETTER</h6>
+                                <p>Cadastre seu email para receber novidades dos imóveis</p>
+                                <div class="newsletter">
+                                    <form action="#" method="POST" class="newsletter-form">
+                                        <input type="email" name="email" placeholder="Digite seu email" />
+                                        <button>
+                      <i class="fa fa-paper-plane"></i>
+                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4" style="text-align: center;">
+                            <div class="content">
+                                <div>
+                                    <h6 class="footer_title title is-6">Redes Sociais</h6>
+                                    <p>Siga nossas redes sociais</p>
+                                    <a class="button is-medium is-facebook">
+                                        <span class="icon">
+                      <i class="fab fa-facebook-f fa-lg"></i>
+                    </span>
+                                    </a>
+                                    <a class="button is-medium is-instagram">
+                                        <span class="icon">
+                      <i class="fab fa-instagram fa-lg"></i>
+                    </span>
+                                    </a>
+                                    <a class="button is-medium is-twitter">
+                                        <span class="icon">
+                      <i class="fab fa-twitter fa-lg"></i>
+                    </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="content">
+                                <h6 class="footer_title title is-6">Endereço</h6>
+                                <p class="is-marginless">Rua das imobiliarias, 123 - Sala A</p>
+                                <p class="is-marginless">Santa Maria - RS</p>
+                                <div>
+                                    <i class="fa fa-phone"></i> &nbsp; <span>Telefone</span> &nbsp;
+                                    <a href="tel:+5534211234">(55) 3421-1234</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-foot">
+                <div class="container has-text-centered">
+                    <p class="footer-text">
+                        &copy; 2020 - Gaucha Imobiliaria. Todos Direitos Reservados. <br />
+                    </p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
